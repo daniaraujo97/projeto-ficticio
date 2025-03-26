@@ -1,0 +1,189 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #a289cab0, #b8845a8e);
+    font-family: 'Playfair Display', serif;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo img {
+    width: 100px;
+    float: left;
+    padding: 30px;
+}
+
+/* Estilos da Navbar */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: rgba(19, 16, 16, 0.836);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #b7d62a;
+}
+
+/* Estilos para as seções */
+#sobre, #servicos, #contato {
+    text-align: center;
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contato {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c069b1b4;
+}
+
+.texto {
+   text-align: center;
+   font-size: 24px;
+   color: #000000;
+   transition: opacity 0.3s ease;
+}
+
+.imagem {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover .texto {
+    opacity: 0;
+}
+
+.container:hover .imagem {
+    opacity: 1;
+}
+
+
+.container {
+    position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:70%;;
+}
+
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container .texto {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+    color: #070707;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Formulário */
+.form {
+    width: 80%; /* Ajustando a largura para ficar mais proporcional */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Estilos do Rodapé */
+footer {
+    font-style: italic;
+    font-size: 10pt;
+    color: rgb(0, 0, 0);           /* Texto branco */
+    text-align: center;     /* Centraliza o texto */
+    padding: 20px;          /* Espaçamento interno */
+    position: relative;     /* Pode ser usado caso precise de um rodapé fixo */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;       /* Espaço entre o conteúdo da página e o rodapé */
+}
+
+footer p {
+    margin: 5px 0;          /* Espaçamento entre as linhas do rodapé */
+    font-size: 14px;        /* Tamanho da fonte */
+}
+
+footer a {
+    color: #0a0a0a;         /* Cor do link */
+    text-decoration: none;  /* Remove o sublinhado */
+    font-size: 12pt;
+    font-style: normal;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
