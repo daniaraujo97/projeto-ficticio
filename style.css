@@ -97,7 +97,7 @@ body {
     position:relative;
 	display:inline-block;
 	vertical-align:middle;
-	line-height:70%;;
+	line-height:70%;
 }
 
 
@@ -185,5 +185,58 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Deixa o menu em coluna */
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Espaçamento entre os links */
+    }
+
+    .container {
+        flex-direction: column; /* Mantém os blocos em coluna */
+        width: 90%; /* Usa mais espaço da tela */
+        margin: 30px;
+    }
+
+    .titulo img {
+        width: 80px; /* Reduz a logo para telas menores */
+        padding: 10px;
+    }
+
+    .form {
+        width: 90%; /* Ajusta a largura do formulário */
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .form input, .form textarea {
+        font-size: 14px;
+    }
+
+    .titulo img {
+        width: 60px; /* Ainda menor para telas bem pequenas */
+    }
 }
 
