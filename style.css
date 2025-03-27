@@ -57,7 +57,7 @@ body {
     position: relative;
     width: 300px;
     height: 200px;
-    margin-left: 150px;
+    margin: 70px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -239,4 +239,34 @@ footer a:hover {
         width: 60px; /* Ainda menor para telas bem pequenas */
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os blocos quebrem linha, se necessário */
+        justify-content: center; /* Centraliza os projetos */
+        width: 300px; /* Mantém um tamanho proporcional à tela */
+        margin: 30px auto; /* Centraliza o conteúdo */
+    }
+
+    .container .texto {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 0px;
+
+    .navbar ul {
+        justify-content: space-around; /* Distribui melhor os itens do menu */
+        font-size: 18px; /* Aumenta o tamanho da fonte */
+    }
+
+    .titulo img {
+        width: 120px; /* Aumenta o tamanho da logo */
+    }
+
+    .form {
+        width: 50%; /* O formulário fica maior para preencher melhor a tela */
+        max-width: 700px;
+    }
+}
+
 
