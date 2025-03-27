@@ -5,41 +5,53 @@ body {
 }
 
 .titulo {
-    width: 100%;
+    width: 95%;
     text-align: center;
 }
 
 .titulo img {
     width: 100px;
     float: left;
-    padding: 30px;
+    padding: 10px;
 }
 
 /* Estilos da Navbar */
+.navbar {
+    width: 100%; /* Garante que a navbar ocupe toda a largura */
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center;
+    padding: 10px 0;
+    background-color: #c08b6050; /* Adicione uma cor de fundo, se necessário */
+}
+
 .navbar ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os links */
+    align-items: center;
     padding: 0;
+    margin: 0;
     list-style-type: none;
-    margin: 50px;
-    overflow: hidden;
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento entre os itens */
 }
 
 .navbar ul li a {
     display: inline-block;
-    color: rgba(19, 16, 16, 0.836);
-    text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
     text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .navbar ul li a:hover {
-    background-color: #b7d62a;
+    background-color: #a289cab0;
+    border-radius: 5px;
 }
+
 
 /* Estilos para as seções */
 #sobre, #servicos, #contato {
@@ -98,6 +110,7 @@ body {
 	display:inline-block;
 	vertical-align:middle;
 	line-height:70%;
+    margin: 60px;
 }
 
 
@@ -113,7 +126,7 @@ body {
     font-size: 18px;
     text-align: center;
     margin-top: 100px;
-    color: #070707;
+    color: #000000;
 }
 
 .container img:hover {
@@ -187,88 +200,41 @@ footer a:hover {
     text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
 }
 
-/* Para telas menores que 768px (tablets e celulares) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
+@media screen and (max-width: 480px) {
+    .container {
+      width: 100%;                /* Largura do container ajustada */
+      margin: 10%;            /* Centraliza o container */
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    /* 🔹 Formulário Responsivo */
+    .form {
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;            /* Centraliza o formulário */
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .titulo img {
+        width: 60px;
     }
 
+    .container {
+        background-size: cover;  /* A imagem ainda vai cobrir a tela */
+      }
+
     .navbar ul {
-        flex-direction: column; /* Deixa o menu em coluna */
-        align-items: center;
+        flex-direction: column;
     }
 
     .navbar ul li {
-        margin: 5px 0; /* Espaçamento entre os links */
+        margin: 5px 0;
     }
-
-    .container {
-        flex-direction: column; /* Mantém os blocos em coluna */
-        width: 90%; /* Usa mais espaço da tela */
-        margin: 30px;
-    }
-
-    .titulo img {
-        width: 80px; /* Reduz a logo para telas menores */
-        padding: 10px;
-    }
-
-    .form {
-        width: 90%; /* Ajusta a largura do formulário */
-    }
-}
-
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-        gap: 10px;
-    }
-
-    .form input, .form textarea {
-        font-size: 14px;
-    }
-
-    .titulo img {
-        width: 60px; /* Ainda menor para telas bem pequenas */
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que os blocos quebrem linha, se necessário */
-        justify-content: center; /* Centraliza os projetos */
-        width: 300px; /* Mantém um tamanho proporcional à tela */
-        margin: 30px auto; /* Centraliza o conteúdo */
-    }
-
-    .container .texto {
-        font-size: 18px;
-        text-align: center;
-        margin-top: 0px;
-
-    .navbar ul {
-        justify-content: space-around; /* Distribui melhor os itens do menu */
-        font-size: 18px; /* Aumenta o tamanho da fonte */
-    }
-
-    .titulo img {
-        width: 120px; /* Aumenta o tamanho da logo */
-    }
-
-    .form {
-        width: 50%; /* O formulário fica maior para preencher melhor a tela */
-        max-width: 700px;
-    }
-   }
-
 }
 
 
