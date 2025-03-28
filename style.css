@@ -201,10 +201,12 @@ footer a:hover {
     text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
 }
 
-@media screen and (width: >=700px) and (width <= 1024px) {
+@media screen and (width >=700px) and (width <= 1024px) {
     .container {
-      width: 100%;                /* Largura do container ajustada */
-      margin: 10%;            /* Centraliza o container */
+      background-size: cover;
+      width: 100vh; 
+      height: 60vh;               /* Largura do container ajustada */
+      margin: 40px;            /* Centraliza o container */
     }
   
     .navbar ul li a {
@@ -228,6 +230,7 @@ footer a:hover {
     .container {
         background-size: cover;  /* A imagem ainda vai cobrir a tela */
         width: 70%;
+        margin: 10%;
       }
 
     .navbar ul {
