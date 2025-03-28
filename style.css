@@ -201,7 +201,7 @@ footer a:hover {
     text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
 }
 
-@media screen and (width >=700px) and (width <= 1024px) {
+@media screen and (width >=700px) and (width <= 1180px) {
     .container {
       background-size: cover;
       width: 100vh; 
