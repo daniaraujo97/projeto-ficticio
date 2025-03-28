@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    width: 100%;
     background-image: linear-gradient(to right, #a289cab0, #b8845a8e);
     font-family: 'Playfair Display', serif;
 }
@@ -200,7 +201,7 @@ footer a:hover {
     text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width: >=700px) and (width <= 1024px) {
     .container {
       width: 100%;                /* Largura do container ajustada */
       margin: 10%;            /* Centraliza o container */
@@ -213,19 +214,20 @@ footer a:hover {
   
     /* 🔹 Formulário Responsivo */
     .form {
-      width: 90%;
-      max-width: 500px;
-      margin: 0 auto;            /* Centraliza o formulário */
-    }
+        width: 80%;
+        max-width:500px;
+        margin: auto;            /* Centraliza o formulário */
+      }
   }
   
-@media screen and (max-width: 768px) {
+@media screen and (width < 700px) {
     .titulo img {
         width: 60px;
     }
 
     .container {
         background-size: cover;  /* A imagem ainda vai cobrir a tela */
+        width: 70%;
       }
 
     .navbar ul {
@@ -235,6 +237,12 @@ footer a:hover {
     .navbar ul li {
         margin: 5px 0;
     }
+
+    .form {
+        width: 80%;
+        margin: 10px 15px;
+     }
+    
 }
 
 
